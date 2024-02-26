@@ -3,21 +3,24 @@
    --big-text: #c47b7b;
 }
 body{
-    margin-left:auto;
-    margin-right:auto;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0
 }
-
+/* Home page design  */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     color: var(--text-color);
 }
-.body{
+.home{
     background: linear-gradient(-45deg, #c47f6a, #84c9a0, #9ca870, #58bea7);
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
-    height: 100vh;
+    margin:0;
+    padding:0
 }
 @keyframes gradient {
     0% {
@@ -30,9 +33,9 @@ body{
       background-position: 0% 50%;
     }
   }
+  /* desktop navbar */
 nav{
-    overflow: hidden;
-    height:46px;
+    height:100px;
     width:100vw;
 }
 nav ul{
@@ -42,7 +45,7 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    padding:18px;
+    padding:8px;
 }
 nav ul li a{
     text-decoration: none;
@@ -50,23 +53,25 @@ nav ul li a{
     font-family: "Anta", sans-serif;
     transition: all;
     font-size: 20px;
+    text-align: center;
+    padding:10px;
+
 }
 nav ul li a:hover{
-    text-decoration: underline;
-    transition: 0.6s;
+    text-decoration: underline 0.16em rgba(100, 59, 59, 0); transition: text-decoration-color 1.3s;
 }
 .index{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width:60%;
-    margin: 0em auto;
+    margin: 1em auto;
 }
 .welText{
     font-family: "Anta", sans-serif;
     font-weight: 500;        
     font-style: normal;
-    margin-top: 4em;
+    margin-top: 2em;
     margin-left: 0.5em;
 }
 .indexFirstDiv h2{
@@ -97,7 +102,7 @@ nav ul li a:hover{
 }
 .cont-icon a{
     background:#4e916b;
-    padding: 1em;
+    padding: 0.7em;
     border-radius: 2em;
     margin-bottom: 2em;
     display: inline-block;
@@ -107,14 +112,109 @@ nav ul li a:hover{
 }
 svg{
     cursor: pointer;
-    margin-top: 0.2em;
 }
 .leasy{
     margin-left: 8em;
-    margin-top: 0.5em;
     font-size: large;
     font-family: "Anta", sans-serif;
 }
 h5{
     color:rgb(153, 209, 148)
+}
+.copyright{
+    width:100%;
+    background: #141313;
+    padding: 0.8em;
+    text-align: center;
+    margin-top:1.6em;
+}
+.copyright p{
+    color:rgb(5, 75, 133);
+    font-family: "anta";
+    font-size: 12px;
+}
+/* About us sector  */
+.aboutUs{
+    background: linear-gradient(-45deg, #8485ac, #8bb69b, #a0ac76, #5fa192);
+    background-size: 400% 400%;
+    animation: aboutUs 8s ease infinite;
+    height: 100vh;
+    width:100vw;
+}
+@keyframes aboutUs {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.aboutUs-container{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin:3em auto;
+    gap: 1em;
+    justify-content: space-between;
+    
+}
+.aboutUs-content-1{
+    flex-basis: 60%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-left:1px solid rgb(188, 188, 224);
+    
+}
+.aboutUs-content-1 h3{
+    margin-bottom: 1em;
+    margin-top: 0.4em;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 22px;
+    letter-spacing:0.2em;
+    color:rgb(233, 208, 177);
+    margin: 4px;
+}
+.aboutUs-content-1 p{
+    font-family: "anta", monospace;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    color:rgb(230, 231, 226);
+    font-weight:400;
+    margin-bottom: 0.5em;
+    margin-left: 4px;
+}
+.aboutUs-content-2{
+    flex-basis: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.aboutUs-content-2 img{
+    width:300px;
+    height:300px;
+}
+  /* contact dropdown  */
+.dropdown-container{
+    display: inline;
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    top:32px;
+    left:8px;
+    min-width:110px;
+    display: none;
+    transition: all;
+}
+.dropdown-content a{
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    color:beige;
+    padding:4px;
+}
+.dropdown-container:hover .dropdown-content{
+    display:block;
 }
