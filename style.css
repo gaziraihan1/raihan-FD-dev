@@ -222,12 +222,69 @@ h5{
 /* media queary for home page  */
 @media (max-width:640px) {
     .home{
-        height:100vh;
         max-width: 640px;
         margin:0;
         padding: 0;
     }
+    .index{
+        width:80%;
+    }
+    nav ul li a{
+        display: block;
+        transition: all;
+        font-size: 14px;
+        text-align: center;
+        padding:6px;
+        color:rgb(107, 63, 2);
+    
+    }
     .copyright{
         text-align: center;
+        width:100%;
+        padding:8px;
     }
+    .copyright p{
+        font-size: small;
+    }
+    .welText{
+        font-family: "Anta", sans-serif;
+        font-weight: 400;        
+        font-style: normal;
+        margin-top: 1.2em;
+        margin-left: 0.5em;
+    }
+    .indexFirstDiv h2{
+        font-family: "Anta", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size:0.8em;
+        margin-top: 0.5em;
+        margin-left: 0.8em;
+    }
+    
+    .indexSecondDiv{
+        margin-top: 3em;
+        width:100%;
+    }
+    .leasy{
+        display: none;
+    }
+    .indexSecondDiv ul li{
+        padding:6px;
+    }
+    .facebook{
+        margin-left: 2em;
+    }
+    .cont-icon a{
+        background:#4e916b;
+        padding: 0.4em;
+        border-radius: 2em;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-size: small;
+    }
+    
 }
