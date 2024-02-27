@@ -8,39 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/70b2979014.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Raihan Gazi</title>
 </head>
 <body>
     <main>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <div class="dropdown-container">
-                        <a href="profile.html">About me</a>
-                        <div class="dropdown-content">
-                            <a href="profile.html">My info</a>
-                            <a href="skill.html">My Skill</a>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                    
-                <li>
-                    <div class="dropdown-container">
-                        <a href="contact.html">Contact</a>
-                        <div class="dropdown-content">
-                            <a href="">Hire me</a>
-                            <a href="contact.html">Contact info</a>
-                        </div>
-                    </div>          
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="homeMenu"><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown-container">
+                            <a href="profile.html">About me</a>
+                            <div class="dropdown-content">
+                                <a href="profile.html">My info</a>
+                                <a href="skill.html">My Skill</a>
+                            </div>
+                        </div>          
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li>
+                        <div class="dropdown-container">
+                            <a href="contact.html">Contact</a>
+                            <div class="dropdown-content">
+                                <a href="">Hire me</a>
+                                <a href="contact.html">Contact info</a>
+                            </div>
+                        </div>          
+                    </li>
+                    <li class="skill">
+                        <a href="skill.html">Skill</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </main>
 </body>
 </html>
