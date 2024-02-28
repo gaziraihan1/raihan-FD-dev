@@ -360,7 +360,7 @@ footer{
         font-weight: 300;
     }
     .explore ul{
-        display: flex;
+        display: none;
         list-style-type: none;
         flex-direction: row-reverse;
         justify-content: center;
@@ -381,7 +381,7 @@ footer{
     .copyright{
         text-align: center;
         width:100%;
-        padding:12px;
+        padding:14px;
         display: block;
     }
     footer{
