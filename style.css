@@ -152,7 +152,7 @@ h5{
     bottom:0px;
     display: none;
 }
-.copyright p{
+.copyright p{  
     color:rgb(15, 102, 173);
     font-family: "anta";
     font-size: 12px;
@@ -165,11 +165,9 @@ footer{
 /* About us sector  */
 
 .aboutUs{
-    background: linear-gradient(-45deg, #8485ac, #8bb69b, #a0ac76, #5fa192);
-    background-size: 400% 400%;
-    animation: aboutUs 8s ease infinite;
-    min-height: 100vh;
+    background-image: linear-gradient(to right top, #de9dc2, #cf9ac7, #be99cb, #ab97cd, #9696cd, #879dd4, #77a3d8, #67a9d9, #5cb9e0, #58c8e2, #60d6e1, #73e3dc);
     width:100vw;
+    height: auto;
 }
 @keyframes aboutUs {
     0% {
@@ -185,14 +183,14 @@ footer{
 .aboutUs-container{
     display: flex;
     flex-direction: row;
-    width:80%;
+    width:80vw;
     margin:3em auto;
     gap: 1em;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .aboutUs-content-1{
-    flex-basis: 60%;
+    flex-basis: 55%;
     margin-top: 1em;
     margin-bottom: 1em;
     
@@ -212,20 +210,17 @@ footer{
     font-size: 14px;
     color:rgb(230, 231, 226);
     font-weight:400;
-    margin-bottom: 0.5em;
     margin-left: 4px;
+    margin-top: 1em;
 }
 .aboutUs-content-2{
     flex-basis: 40%;
     margin-bottom: 1em;
-    margin-left:auto ;
-    margin-right: auto;
+    display: flex;
+    justify-content: end;
 }
-.aboutUs-content-2 img{
-    width:300px;
-    height:300px;
-}
-  
+
+
 footer h3{
     display: none;
 }
@@ -245,8 +240,6 @@ footer h3{
 
     .navbar ul#menu {
         display: none;
-        opacity: 0;
-        transition: opacity 2s ease;
     }
     .header{
         width: 100vw;
@@ -262,21 +255,20 @@ footer h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        opacity: 1;
     }
     
     .menuBtn {
         display: block;
-        height: 42px;
-        font-size: 40px;
-        align-items: end;
+        height: 40px;
+        font-size: 38px;
         color: white;
         cursor: pointer;
+        margin-right: 0.4em;
     }
     
     .closeBtn {
         color: white;
-        font-size: 40px;
+        margin-right: 0.4em;
     }
     .aboutUs {
         min-height: 100vh;
@@ -434,7 +426,27 @@ footer h3{
     .copyright p{
         font-size:10px;
     }
-    
+    .aboutUs-container{
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        margin: 1em auto 0em auto;
+    }
+    .aboutUs-content-1{
+        text-align: left;
+    }
+    .aboutUs-content-1 h3{
+        margin-top: 1em;
+        margin-left: 0;
+    }
+    .aboutUs-content-1 p{
+        text-align: left;
+        margin-left: 0;
+        width: 80vw;
+    }
+    .aboutUs-content-2 img{
+        width:80vw;
+    }
 }
 @media (min-width:480px) {
     .copyright{
