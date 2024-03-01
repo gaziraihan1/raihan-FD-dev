@@ -4,7 +4,8 @@
 }
 body{
     margin:0;
-    padding:0
+    padding:0;
+    height:100vh;
 }
 /* Home page design  */
 *{
@@ -164,12 +165,17 @@ footer{
 }
 /* About us sector  */
 
-.aboutUs{
-    background-image: linear-gradient(to right top, #de9dc2, #cf9ac7, #be99cb, #ab97cd, #9696cd, #879dd4, #77a3d8, #67a9d9, #5cb9e0, #58c8e2, #60d6e1, #73e3dc);
+
+.aboutUs {
+    background: linear-gradient(-45deg, #ad8478, #9fd3b4, #aab87a, #58bea7);
+    background-size: 400% 400%;
+    animation: about 12s ease infinite;
+    margin:0;
+    padding:0;
+    min-height:100vh;
     width:100vw;
-    height: auto;
 }
-@keyframes aboutUs {
+@keyframes about {
     0% {
       background-position: 0% 50%;
     }
@@ -180,6 +186,7 @@ footer{
       background-position: 0% 50%;
     }
   }
+
 .aboutUs-container{
     display: flex;
     flex-direction: row;
@@ -196,19 +203,17 @@ footer{
     
 }
 .aboutUs-content-1 h3{
-    margin-bottom: 1em;
-    margin-top: 0.4em;
+    margin-top: 1em;
     font-family: "IBM Plex Mono", monospace;
     font-size: 22px;
     letter-spacing:0.2em;
-    color:rgb(233, 208, 177);
-    margin: 4px;
+    color:rgb(196, 137, 66);
 }
 .aboutUs-content-1 p{
     font-family: "anta", monospace;
     letter-spacing: 0.1em;
     font-size: 14px;
-    color:rgb(230, 231, 226);
+    color:rgb(44, 48, 30);
     font-weight:400;
     margin-left: 4px;
     margin-top: 1em;
@@ -219,7 +224,6 @@ footer{
     display: flex;
     justify-content: end;
 }
-
 
 footer h3{
     display: none;
@@ -270,9 +274,7 @@ footer h3{
         color: white;
         margin-right: 0.4em;
     }
-    .aboutUs {
-        min-height: 100vh;
-    }
+    
 /* responsive home page      */
 
     .index{
@@ -422,10 +424,31 @@ footer h3{
         text-align: center;
         display: block;
         font-size: 16px;
-    }
+    }   
     .copyright p{
         font-size:10px;
     }
+    .aboutUs {
+        background: linear-gradient(-65deg, #ca806b, #7aa88c, #9aad54, #72aa9c);
+        background-size: 400% 400%;
+        animation: about 12s ease infinite;
+        margin:0;
+        padding:0;
+        min-height:100vh;
+        width:100vw;
+    }
+    @keyframes about {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    
     .aboutUs-container{
         display: flex;
         flex-direction: column;
@@ -438,14 +461,31 @@ footer h3{
     .aboutUs-content-1 h3{
         margin-top: 1em;
         margin-left: 0;
+        color:#396911
     }
     .aboutUs-content-1 p{
         text-align: left;
         margin-left: 0;
         width: 80vw;
     }
+    .aboutUs-content-2{
+        justify-content: center;
+    }
     .aboutUs-content-2 img{
-        width:80vw;
+        display: flex;
+        justify-content: center;
+        height:280px;
+        width:280px;
+        border-radius:50%;
+        transition: all ease-in-out;
+    }
+    .aboutUs-content-2 img:hover{
+        border-top:1px solid green;
+        border-bottom:1px solid red;
+        border-left:1px solid green;
+        border-right: 1px solid red;
+        border-radius: 100%;
+        transition: 1s;
     }
 }
 @media (min-width:480px) {
