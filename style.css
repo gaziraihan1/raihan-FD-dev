@@ -196,6 +196,15 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.about-content, .otherInfo{
+    flex-basis: 100%;
+    text-align: center;
+    color:#417947;
+    font-family: "anta";
+}
+.aboutH3{
+    display: none;
+}
 .aboutUs-content-1{
     flex-basis: 55%;
     margin-top: 1em;
@@ -212,8 +221,8 @@ footer{
 .aboutUs-content-1 p{
     font-family: "anta", monospace;
     letter-spacing: 0.1em;
-    font-size: 14px;
-    color:rgb(44, 48, 30);
+    font-size: 18px;
+    color:rgb(69, 77, 44);
     font-weight:400;
     margin-left: 4px;
     margin-top: 1em;
@@ -223,6 +232,27 @@ footer{
     margin-bottom: 1em;
     display: flex;
     justify-content: end;
+}
+.aboutUs-content-2 img{
+    border-right:1px ridge white; 
+    border-top:1px ridge white; 
+    border-radius: 50%;
+}
+.blank{
+    width:40vw;
+    border:1px solid gray;
+    margin:1.5em auto;
+}
+.additionalInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:80vw;
+    margin:2em auto 0em auto;
+}
+
+.otherInfo-1, .otherInfo-2{
+    flex-basis: 50%;
 }
 
 footer h3{
@@ -251,7 +281,6 @@ footer h3{
         text-align: center;
         font-size:12px;
     }
-    
     nav ul li a{
         font-size:4px;
     }
@@ -383,11 +412,11 @@ footer h3{
         color:rgb(20, 90, 20);
         padding:8px;
         transition: all;
-        font-size:medium ;
+        font-size:16px ;
     }
     .explore ul li a:hover{
         color:#00a80e;
-        font-size: 12px;
+        font-size: 17px;
     }
     .copyright{
         text-align: center;
@@ -455,6 +484,7 @@ footer h3{
         width:80vw;
         margin: 1em auto 0em auto;
     }
+    
     .aboutUs-content-1{
         text-align: left;
     }
@@ -467,6 +497,8 @@ footer h3{
         text-align: left;
         margin-left: 0;
         width: 80vw;
+        letter-spacing:0.05em;
+        font-size: 16px;
     }
     .aboutUs-content-2{
         justify-content: center;
@@ -477,15 +509,38 @@ footer h3{
         height:280px;
         width:280px;
         border-radius:50%;
-        transition: all ease-in-out;
+        border-top:3px solid green;
+        border-bottom:3px solid red;
+        border-left:3px solid green;
+        border-right: 3px solid red;
+        transition: all;
     }
     .aboutUs-content-2 img:hover{
-        border-top:1px solid green;
-        border-bottom:1px solid red;
-        border-left:1px solid green;
-        border-right: 1px solid red;
-        border-radius: 100%;
+        border-bottom:3px solid rgb(220, 220, 48);
+        border-top:3px solid blue;
+        border-right:3px solid rgb(220, 220, 48);
+        border-left: 3px solid blue;
         transition: 1s;
+    }
+    .about-content{
+        display: none;
+    }
+    .aboutH3{
+        display: block;
+    }
+    .blank{
+        width:80vw;
+        margin: 1em auto;
+        border:1px ridge rgb(132, 206, 114);
+    }
+    .additionalInfo{
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        margin: 0 auto;
+    }
+    .otherInfo{
+        display: none;
     }
 }
 @media (min-width:480px) {
