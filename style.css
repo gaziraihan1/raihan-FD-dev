@@ -337,8 +337,8 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 38px;
-        font-size: 38px;
+        height: 42px;
+        font-size: 36px;
         color: white;
         cursor: pointer;
         margin-right: 0.4em;
@@ -346,21 +346,19 @@ td::before{
     
     .closeBtn {
         color: white;
-        margin-right: 0.4em;
     }
     
 /* responsive home page      */
 
     .index{
         width:90vw;
-        margin-top: -1em;
     }
     
     .welText{
         font-family: "Anta", sans-serif;
         font-weight: 400;        
         font-style: normal;
-        margin-top: 2em;
+        margin-top: 1em;
         text-align: center;
     }
     .indexFirstDiv h2{
@@ -416,6 +414,7 @@ td::before{
         font-size: small;
     }
     .explore{
+        width:90vw;
         display: block;
         margin-bottom: 2em;
         margin-left:auto ;
@@ -615,7 +614,10 @@ td::before{
     .otherInfo-2 table tr th{
         text-align:right;
     }
-    
+    .otherInfo-2 p{
+        font-size: 16px;
+        margin-bottom: 1em;
+    }
 }
 @media (min-width:480px) {
     .copyright{
