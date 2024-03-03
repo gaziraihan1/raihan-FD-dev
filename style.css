@@ -36,9 +36,11 @@ body{
   }
 
 /* navigation bar  */
+
 .navbar{
     width:100vw; 
     overflow: hidden;
+    
  }
 
  .navbar ul{
@@ -246,13 +248,21 @@ footer{
 .additionalInfo{
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
     width:70vw;
+    flex-wrap: wrap;
+    height:auto;
+    gap: 1em;
     margin:2em auto 0em auto;
 }
-
+.additionalInfo .otherInfo-2 p{
+    text-wrap: wrap;
+}
+.otherInfo{
+    flex-basis: 100%;;
+}
 .otherInfo-1, .otherInfo-2{
-    flex-basis: 50%;
+    flex-basis:50%;
+    margin:0 auto;
 }
 
 footer h3{
@@ -265,13 +275,21 @@ footer h3{
     box-sizing: border-box;
     text-align: center;
 }
-.personalInfo, .myInfo{
+.personalInfo, .myInfo, .otherInfo-2 h3{
     text-align: center;
     margin:1em auto 0.5em ;
     font-family: "anta";
     font-size: large;
 }
-
+.otherInfo-2 p{
+    font-size:18px;
+    margin-top: 0.5em;
+    font-family: "anta";
+    text-align: center;
+}
+.otherInfo-2 table{
+    margin:0 auto
+}
 table tr th{
     text-align: left;
     font-family: "anta";
@@ -315,7 +333,7 @@ td::before{
         flex-direction: column;
         justify-content: center;
     }
-    
+    /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
         height: 40px;
@@ -507,7 +525,7 @@ td::before{
     .aboutUs-container{
         display: flex;
         flex-direction: column;
-        width:80vw;
+        width:90vw;
         margin: 1em auto 0em auto;
     }
     
@@ -522,7 +540,7 @@ td::before{
     .aboutUs-content-1 p{
         text-align: left;
         margin-left: 0;
-        width: 80vw;
+        width: 90vw;
         letter-spacing:0.05em;
         font-size: 16px;
     }
@@ -558,15 +576,15 @@ td::before{
         display: block;
     }
     .blank{
-        width:80vw;
+        width:90vw;
         margin: 1em auto;
         border:1px ridge rgb(11, 56, 0);
     }
     .additionalInfo{
         display: flex;
         flex-direction: column;
-        width:80vw;
-        margin: 0 auto;
+        width:90vw;
+        margin: 0em auto 1em auto;
     }
     .otherInfo, .personalInfo{
         display: none;
@@ -588,10 +606,24 @@ td::before{
         border-bottom: 2px solid green;
         margin:1em auto;
     }
+    .otherInfo-2 h3.eduInfo{
+        text-align: center;
+        margin-top: 0em;
+    }
+    .otherInfo-2 table tr th{
+        text-align:right;
+    }
+    .copyAbout{
+        display: block;
+    }
 }
 @media (min-width:480px) {
     .copyright{
         display: none;
+    }
+    .aboutUs .copyright{
+        display: block;
+        padding:16px;
     }
     footer ul{
         display: flex;
@@ -602,6 +634,15 @@ td::before{
     }
 }
 @media (max-width:460px){
+    .aboutUs-container{
+        width:90vw;
+    }
+    .additionalInfo{
+        width:90vw;
+    }
+    .additionalInfo .otherInfo-2 p{
+        font-size: 14px;
+    }
     table{
         font-size: small;
     }
