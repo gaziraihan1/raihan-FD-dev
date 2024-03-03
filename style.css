@@ -560,7 +560,7 @@ td::before{
     .blank{
         width:80vw;
         margin: 1em auto;
-        border:1px ridge rgb(132, 206, 114);
+        border:1px ridge rgb(11, 56, 0);
     }
     .additionalInfo{
         display: flex;
