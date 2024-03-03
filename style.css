@@ -303,6 +303,7 @@ td::before{
 .blank-2{
     display: none;
 }
+
 /* media queary for home page  */
 @media (max-width:640px) {
     body{
@@ -336,7 +337,7 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 40px;
+        height: 38px;
         font-size: 38px;
         color: white;
         cursor: pointer;
@@ -351,7 +352,7 @@ td::before{
 /* responsive home page      */
 
     .index{
-        width:80%;
+        width:90vw;
         margin-top: -1em;
     }
     
@@ -360,6 +361,7 @@ td::before{
         font-weight: 400;        
         font-style: normal;
         margin-top: 2em;
+        text-align: center;
     }
     .indexFirstDiv h2{
         font-family: "Anta", sans-serif;
@@ -368,7 +370,7 @@ td::before{
         font-style: normal;
         font-size:1em;
         margin-top: 1em;
-        margin-left: 0.6em;
+        margin-left: 0em;
     }
     
     .indexSecondDiv{
@@ -416,9 +418,9 @@ td::before{
     .explore{
         display: block;
         margin-bottom: 2em;
-        width:80%;
         margin-left:auto ;
         margin-right: auto;
+        text-align: center;
     }
     .explore h4{
         text-align: center;
@@ -427,11 +429,11 @@ td::before{
         font-weight: 300;
     }
     .explore ul{
-        width: 80vw;
+        width: 90vw;
         display: flex;
         list-style-type: none;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 1em auto 0em auto;
         background: linear-gradient(-45deg, #be9e94, #84c9a0, #9ca870, #a5beb8);
         background-size: 400% 400%;
@@ -470,7 +472,7 @@ td::before{
     }
     footer{
         display: block;
-        width:80%;
+        width:90vw;
         margin: 0 auto;
         text-align: center;
     }
@@ -613,9 +615,7 @@ td::before{
     .otherInfo-2 table tr th{
         text-align:right;
     }
-    .copyAbout{
-        display: block;
-    }
+    
 }
 @media (min-width:480px) {
     .copyright{
@@ -624,6 +624,7 @@ td::before{
     .aboutUs .copyright{
         display: block;
         padding:16px;
+        background: #292222;
     }
     footer ul{
         display: flex;
