@@ -222,7 +222,7 @@ footer{
     font-family: "anta", monospace;
     letter-spacing: 0.1em;
     font-size: 18px;
-    color:rgb(69, 77, 44);
+    color:rgb(32, 36, 20);
     font-weight:400;
     margin-left: 4px;
     margin-top: 1em;
@@ -247,7 +247,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    width:80vw;
+    width:70vw;
     margin:2em auto 0em auto;
 }
 
@@ -258,7 +258,33 @@ footer{
 footer h3{
     display: none;
 }
+.myInfo{
+    display: none;
+}
+.otherInfo-1{
+    box-sizing: border-box;
+    text-align: center;
+}
+.personalInfo, .myInfo{
+    text-align: center;
+    margin:1em auto 0.5em ;
+    font-family: "anta";
+    font-size: large;
+}
 
+table tr th{
+    text-align: left;
+    font-family: "anta";
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+td::before{
+    content: "";
+    margin-right: 1em;
+}
+.blank-2{
+    display: none;
+}
 /* media queary for home page  */
 @media (max-width:640px) {
     body{
@@ -500,6 +526,9 @@ footer h3{
         letter-spacing:0.05em;
         font-size: 16px;
     }
+    .content-1-p{
+        display: none;
+    }
     .aboutUs-content-2{
         justify-content: center;
     }
@@ -507,7 +536,7 @@ footer h3{
         display: flex;
         justify-content: center;
         height:280px;
-        width:280px;
+        width:290px;
         border-radius:50%;
         border-top:3px solid green;
         border-bottom:3px solid red;
@@ -539,8 +568,25 @@ footer h3{
         width:80vw;
         margin: 0 auto;
     }
-    .otherInfo{
+    .otherInfo, .personalInfo{
         display: none;
+    }
+    .myInfo{
+        display: block;
+    }
+    table{
+        width:100%;
+        margin: 0 auto;
+    }
+    table tr th{
+        text-align:right;
+    }
+    .blank-2{
+        display: block;
+        width:40%;
+        height: 2px;
+        border-bottom: 2px solid green;
+        margin:1em auto;
     }
 }
 @media (min-width:480px) {
@@ -553,5 +599,15 @@ footer h3{
     }
     footer h3{
         display: none;
+    }
+}
+@media (max-width:460px){
+    table{
+        font-size: small;
+    }
+    table tr th{
+        font-size: small;
+        font-family:serif;
+        letter-spacing: normal;
     }
 }
