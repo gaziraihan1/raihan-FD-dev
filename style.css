@@ -8,6 +8,7 @@ body{
     height:100vh;
 }
 /* Home page design  */
+
 *{
     margin:0;
     padding:0;
@@ -153,6 +154,7 @@ h5{
 footer{
     display: none;
 }
+
 /* About us sector  */
 
 
@@ -176,6 +178,8 @@ footer{
       background-position: 0% 50%;
     }
   }
+
+  /* About us content */
 
 .aboutUs-container{
     display: flex;
@@ -291,6 +295,7 @@ td::before{
 .blank-2{
     display: none;
 }
+
 /* Portfolio page design */
 
 .portfolio{
@@ -333,11 +338,11 @@ td::before{
 .portSecDiv p{
     text-align: center;
     margin-bottom: 0.4em;
-    font-family: "Dancing Script", cursive;
+    font-family: "anta";
     font-optical-sizing: auto;
 }
 .portSecDiv h3{
-    font-family: "anta";
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -354,8 +359,31 @@ td::before{
     margin-top: 0.4em;
     padding:14px
 }
+
+/* Skill page design */
+
+.skill{
+    padding:0;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(-45deg, #c29ec1, #b6cca2, #91b4a7, #849780);
+    background-size:400% 400%;
+    animation: skill 12s ease infinite;
+}
+@keyframes skill{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
 /* media queary for home page  */
-@media (max-width:640px) {
+@media (max-width:520px) {
     body{
         margin:0;
         padding: 0;
@@ -387,7 +415,7 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 42px;
+        height: 40px;
         font-size: 36px;
         color: white;
         cursor: pointer;
@@ -545,6 +573,8 @@ td::before{
         font-size: 16px;
     }   
     
+    /* About us responsive */
+
     .aboutUs {
         background: linear-gradient(-65deg, #ca806b, #7aa88c, #9aad54, #72aa9c);
         background-size: 400% 400%;
@@ -598,7 +628,7 @@ td::before{
         display: flex;
         justify-content: center;
         height:280px;
-        width:290px;
+        width:270px;
         border-radius:50%;
         border-top:3px solid green;
         border-bottom:3px solid red;
@@ -639,9 +669,13 @@ td::before{
     table{
         width:100%;
         margin: 0 auto;
+        font-size: small;
     }
     table tr th{
-        text-align:right;
+        font-size: small;
+        font-family: "anta";
+        letter-spacing: normal;
+        text-align: right;
     }
     .blank-2{
         display: block;
@@ -659,8 +693,11 @@ td::before{
     }
     .otherInfo-2 p{
         font-size: 16px;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
     }
+
+    /* Portfolio responsive */
+
     .portfolio{
         width:90vw;
         text-wrap: wrap;
@@ -674,33 +711,9 @@ td::before{
     .portfolio .portSecDiv h3{
         text-align: center;
     }
-}
-@media (min-width:480px) {
-    
-    footer ul{
-        display: flex;
-        flex-direction: row;
-    }
-    footer h3{
-        display: none;
+    .portFirstDiv p{
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
     }
 }
-@media (max-width:460px){
-    .aboutUs-container{
-        width:90vw;
-    }
-    .additionalInfo{
-        width:90vw;
-    }
-    .additionalInfo .otherInfo-2 p{
-        font-size: 14px;
-    }
-    table{
-        font-size: small;
-    }
-    table tr th{
-        font-size: small;
-        font-family:serif;
-        letter-spacing: normal;
-    }
-}
+
