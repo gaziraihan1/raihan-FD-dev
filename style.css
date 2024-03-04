@@ -415,8 +415,8 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 38px;
-        font-size: 32px;
+        height: 40px;
+        font-size: 34px;
         color: white;
         cursor: pointer;
         margin-right: 0.4em;
