@@ -367,7 +367,7 @@ td::before{
     margin:0;
     width:100vw;
     height:100vh;
-    background: linear-gradient(-45deg, #c29ec1, #b6cca2, #91b4a7, #849780);
+    background: linear-gradient(-45deg, #c29ec1, #d6bfb2, #b8a87d, #849780);
     background-size:400% 400%;
     animation: skill 12s ease infinite;
 }
@@ -415,8 +415,8 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 40px;
-        font-size: 36px;
+        height: 38px;
+        font-size: 32px;
         color: white;
         cursor: pointer;
         margin-right: 0.4em;
