@@ -342,7 +342,7 @@ td::before{
     font-optical-sizing: auto;
 }
 .portSecDiv h3{
-  font-family: "Dancing Script", cursive;
+    font-family: "Slackside One", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -367,7 +367,7 @@ td::before{
     margin:0;
     width:100vw;
     height:100vh;
-    background: linear-gradient(-45deg, #c29ec1, #d6bfb2, #b8a87d, #849780);
+    background: linear-gradient(-45deg, #c4b7c3, #b4f0d7, #a8a18d, #addaa4);
     background-size:400% 400%;
     animation: skill 12s ease infinite;
 }
@@ -381,6 +381,56 @@ td::before{
     100%{
         background-position: 0% 50%;
     }
+}
+.skillSection{
+    width:80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto 0em auto;
+
+}
+.skillSection h1{
+    text-align: center;
+    margin-top: 3em;
+
+}
+.skillSection-1 p{
+    font-family: "Anta";
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.skillSection-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:85vw;
+    margin:0 auto;
+}
+.skillSection-2 h3{   
+    text-align: center;
+    font-family: "Anta";
+    margin: 1em 0em;
+}
+.skillSection ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.skillSection ul li{
+    border:1px solid gray;
+    padding:0.5em;
+    text-align: center;
+}
+.FD-1{
+    margin-top: 0.5em;
+}
+.other-1, .other-2, .other-3{
+    flex-basis: 30%;;
+}
+.skillSection h4{
+    text-align: center;
 }
 /* media queary for home page  */
 @media (max-width:520px) {
@@ -576,7 +626,7 @@ td::before{
     /* About us responsive */
 
     .aboutUs {
-        background: linear-gradient(-65deg, #ca806b, #7aa88c, #9aad54, #72aa9c);
+        background: linear-gradient(-65deg, #ce9889, #93a9c7, #d1e782, #87c0b2);
         background-size: 400% 400%;
         animation: about 12s ease infinite;
         margin:0;
@@ -714,6 +764,23 @@ td::before{
     .portFirstDiv p{
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
+    }
+
+    /* Skill section */
+
+    .skillSection{
+        margin-top: 2em;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skillSection-2{
+        display: flex;
+        flex-direction: column;
+        width:90vw;
+    }
+    .skillIntro p{
+        text-align: left;
     }
 }
 
