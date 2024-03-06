@@ -342,10 +342,8 @@ td::before{
     font-optical-sizing: auto;
 }
 .portSecDiv h3{
-    font-family: "Slackside One", cursive;
-  font-optical-sizing: auto;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
-  font-style: normal;
 }
 .portSecDiv h4{
     font-family: "anta";
@@ -389,10 +387,16 @@ td::before{
     margin: 5em auto 0em auto;
 
 }
-.skillSection h1{
+.skillSection .folks{
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skillSection h2{
     text-align: center;
     margin-top: 3em;
-
+    color:#414941;
+    font-family: 'Courier New', Courier, monospace;
 }
 .skillSection-1 p{
     font-family: "Anta";
@@ -402,34 +406,49 @@ td::before{
 .skillSection-2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width:85vw;
+    justify-content: space-evenly;
+    width:80vw;
     margin:0 auto;
-}
-.skillSection-2 h3{   
+}   
+.skillSection-2 h3, .skillSection-3 h3{   
     text-align: center;
     font-family: "Anta";
     margin: 1em 0em;
+    color:rgb(158, 105, 105)
 }
 .skillSection ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
 }
 .skillSection ul li{
-    border:1px solid gray;
-    padding:0.5em;
+    border:1px solid rgb(173, 139, 139);
+    padding:0.3em;
     text-align: center;
-}
-.FD-1{
-    margin-top: 0.5em;
-}
-.other-1, .other-2, .other-3{
-    flex-basis: 30%;;
+    margin:0.2em 2em;
+    color:#293036;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .skillSection h4{
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skillSection-3 .backEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60vw;
+    margin: 0 auto;
+}
+.skillSection-3 h3{
+    margin:4em auto 1em auto;
+}
+.backEnd p{
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 /* media queary for home page  */
@@ -774,13 +793,29 @@ td::before{
         margin-left: auto;
         margin-right: auto;
     }
-    .skillSection-2{
+    .skillSection-2 .frontEnd{
+        width:90vw;
+        margin:0 auto;
+    }
+    .skillSection-2 .frontEnd ul{
         display: flex;
         flex-direction: column;
         width:90vw;
+        margin: 0 auto;
+    }
+    .frontEnd h4{
+        margin-top: 1.5em;
     }
     .skillIntro p{
         text-align: left;
+    }
+    .skillSection-3 .backEnd{
+        width:90vw;
+        margin:0 auto;
+    }
+    .backEnd svg{
+        width:28px;
+        height:28px;
     }
 }
 
