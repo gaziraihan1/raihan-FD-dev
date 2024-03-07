@@ -459,7 +459,7 @@ td::before{
 /* Contact section */
 
 .contact{
-    background: linear-gradient(-45deg, #809ea5, #8b83a1, #a8b39b, #c7a9c7);
+    background: linear-gradient(-45deg, #a7c0c5, #a9a2bd, #c3cfb5, #dabfda);
     background-size: 400% 400%;
     animation: contactUs 12s ease infinite;
     padding:0;
@@ -504,6 +504,7 @@ td::before{
     margin-top: 0.5em;
     font-family:'Courier New', Courier, monospace;
     color: #242222;
+    font-weight: 600;
 }
 .contactUs-2{
     width:70vw;
@@ -981,7 +982,8 @@ td::before{
         padding:0em;
         width:95vw;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
+        letter-spacing: 0;
     }
 }
 
