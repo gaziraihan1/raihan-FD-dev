@@ -12,32 +12,64 @@
     <title>Raihan Gazi</title>
 </head>
 <body class="contact">
-        <header class="header">
-            <nav class="navbar">
-                <span class="menuBtn" onclick="openMenu()">&equiv;</span>
-                    <span class="closeBtn" onclick="closeMenu()"></span>
-                <ul id="menu">
-                    <li class="homeMenu"><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="profile.html">About me</a>
+    <header class="header">
+        <nav class="navbar">
+            
+            <span class="menuBtn" onclick="openMenu()">&equiv;</span>
+                <span class="closeBtn" onclick="closeMenu()"></span>
+            <ul id="menu">
+                <li class="homeMenu"><a href="index.html">Home</a></li>
+                <li>
+                    <a href="profile.html">About me</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a></li>
+                 <li>
+                    <a href="skill.html">Skill</a>
                     </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a></li>
-                    <li>
-                        <a href="skill.html">Skill</a>
-                        </li>
-                    <li>
-                       <a href="contact.html">Contact</a>  
-                    </li>
-                    
-                </ul>
-            </nav>
-        </header>
+                <li>
+                   <a href="contact.html">Contact</a>  
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
          <div class="contactUs">
-            <div></div>
-            <div></div>
+            <div class="contactUs-1">
+                <h1>
+                    Contact 
+                </h1>
+                <div class="blankCon"></div>
+                <p>
+                    If you have any query or if you want to ask me anything, then feel free to ask me your question. <br>
+                    Find me throgh the link (write all down) or dial my number directly. <br>
+                    Happy coding
+                </p>
+                
+            </div>
+            <div class="contactUs-2">
+                <h3>
+                    Contact info
+                </h3>
+                
+            </div>
+            <div class="contactUs-3">
+
+            </div>
          </div>
     </main>
+    <script>
+        let menu = document.getElementById('menu');
+        let menuBtn = document.querySelector('.menuBtn');
+        let closeBtn = document.querySelector('.closeBtn')
+
+        function toggleMenu() {
+        menu.classList.toggle('show');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+    </script>
 </body>
 </html>
