@@ -139,7 +139,7 @@ svg{
     cursor: pointer;
 }
 .mailto{
-    display: none;
+    display: block;
 }
 .leasy{
     margin-left: 8em;
@@ -1001,10 +1001,13 @@ td::before{
         border-radius: 50%;
     }
 }
-@media (max-width: 790px) and (min-width: 641px) {
+@media (max-width: 1050px) and (min-width: 641px) {
     .index{
         width:85vw;
         margin: 0 auto;
+    }
+    .indexFirstDiv h2{
+        font-size: 1.2em;
     }
     .navbar ul li a{
         font-size: 1em;
@@ -1115,5 +1118,39 @@ td::before{
     }
     .contactUs-2 address{
         text-align: center;
+    }
+}
+@media (max-width:1200px) and (min-width:769px) {
+    .navbar ul li a{
+        font-size: 1em;
+    }
+    .index{
+        width:80vw
+    }
+    .welText{
+        margin-top: 1em;
+        margin-left: 0em;
+    }
+    .indexFirstDiv h2{
+        margin-left: 0em;
+    }
+    
+    .aboutUs-content-1 p{
+        font-size: 16px;
+        letter-spacing: 0em;
+        margin-top: 0.5em;
+        margin-left: 0px;
+    }
+    .facebook{
+        margin-left: 6em;
+    }
+    .additionalInfo{
+        width:80vw;
+    }
+    .skillSection{
+        width:80vw;
+    }
+    .contactUs-2{
+        width:80vw;
     }
 }
