@@ -751,6 +751,9 @@ td::before{
         border:1px solid rgb(7, 22, 7);
         border-radius: 50%;
     }
+    .mailto{
+        display:none;
+    }
     /* About us responsive */
 
     .aboutUs {
