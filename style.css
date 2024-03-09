@@ -1004,7 +1004,7 @@ td::before{
         border-radius: 50%;
     }
 }
-@media (max-width: 1050px) and (min-width: 641px) {
+@media (max-width: 1200px) and (min-width: 641px) {
     .index{
         width:85vw;
         margin: 0 auto;
