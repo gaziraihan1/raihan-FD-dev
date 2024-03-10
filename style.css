@@ -1128,7 +1128,11 @@ td::before{
         font-size: 1em;
     }
     .index{
-        width:80vw
+        width:80vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .welText{
         margin-top: 1em;
@@ -1152,6 +1156,14 @@ td::before{
     }
     .skillSection{
         width:80vw;
+    }
+    .skillSection-2{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .skillSection-3 .backEnd{
+        width: 80vw;
+        margin: 0 auto;
     }
     .contactUs-2{
         width:80vw;
