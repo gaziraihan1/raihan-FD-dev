@@ -578,6 +578,7 @@ td::before{
         text-align: center;
         font-size:12px;
     }
+    
     nav ul li a{
         font-size:4px;
     }
@@ -589,16 +590,16 @@ td::before{
     /* Add this CSS to your existing stylesheet */
     .menuBtn {
         display: block;
-        height: 42px;
-        font-size: 34px;
         color: white;
+        height: 38px;
+        font-size: 32px;
         cursor: pointer;
         margin-right: 0.4em;
     }
-    
     .closeBtn {
-        color: white;
+        height:38px;
     }
+    
     
 /* responsive home page      */
 
@@ -1012,6 +1013,7 @@ td::before{
     .indexFirstDiv h2{
         font-size: 1.2em;
     }
+    
     .navbar ul li a{
         font-size: 1em;
     }
