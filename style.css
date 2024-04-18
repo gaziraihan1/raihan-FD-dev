@@ -909,6 +909,10 @@ td::before{
         margin-left: auto;
         margin-right: auto;
     }
+    .skillSection-2{
+        width:90vw;
+        margin: 0 auto;
+    }
     .skillSection-2 .frontEnd{
         width:90vw;
         margin:0 auto;
