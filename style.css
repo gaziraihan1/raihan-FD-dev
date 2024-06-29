@@ -249,12 +249,13 @@ footer{
     height:auto;
     gap: 1em;
     margin:2em auto 2em auto;
+    padding-bottom: 1em;
 }
 .additionalInfo .otherInfo-2 p{
     text-wrap: wrap;
 }
 .otherInfo{
-    flex-basis: 100%;;
+    flex-basis: 100%;
 }
 .otherInfo-1{
     flex-basis:50%;
@@ -841,6 +842,7 @@ td::before{
         flex-direction: column;
         width:90vw;
         margin: 0em auto 1em auto;
+        padding-bottom: 0.5em;
     }
     .otherInfo, .personalInfo{
         display: none;
